@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_height="match_parent" android:fillViewport="true">
+    <LinearLayout
+        android:layout_width="match_parent" android:layout_height="wrap_content"
+        android:orientation="vertical" android:padding="20dp">
+
+        <TextView android:layout_width="match_parent" android:layout_height="wrap_content"
+            android:text="MY AUTO VIDEO EDITOR" android:textSize="24sp" android:textStyle="bold"
+            android:gravity="center" android:paddingBottom="16dp" />
+
+        <Button android:id="@+id/btnUpload" android:layout_width="match_parent" android:layout_height="wrap_content"
+            android:text="Upload Video" />
+        <TextView android:id="@+id/tvVideoInfo" android:layout_width="match_parent" android:layout_height="wrap_content"
+            android:text="No video selected" android:paddingTop="8dp" android:paddingBottom="8dp" />
+
+        <Button android:id="@+id/btnAuto" android:layout_width="match_parent" android:layout_height="64dp"
+            android:text="AUTO EDIT" android:textSize="18sp" android:enabled="false" />
+
+        <ProgressBar android:id="@+id/progress" style="?android:attr/progressBarStyleHorizontal"
+            android:layout_width="match_parent" android:layout_height="wrap_content"
+            android:max="100" android:layout_marginTop="12dp" />
+        <TextView android:id="@+id/tvStatus" android:layout_width="match_parent" android:layout_height="wrap_content"
+            android:text="Idle" android:paddingTop="4dp" />
+        <TextView android:id="@+id/tvLog" android:layout_width="match_parent" android:layout_height="wrap_content"
+            android:textSize="12sp" android:paddingTop="6dp" />
+
+        <VideoView android:id="@+id/videoView" android:layout_width="match_parent" android:layout_height="320dp"
+            android:visibility="gone" android:layout_marginTop="12dp" />
+
+        <Button android:id="@+id/btnPreview" android:layout_width="match_parent" android:layout_height="wrap_content"
+            android:text="Preview Final Video" android:enabled="false" />
+        <Button android:id="@+id/btnSave" android:layout_width="match_parent" android:layout_height="wrap_content"
+            android:text="Save to Gallery" android:enabled="false" />
+        <Button android:id="@+id/btnSettings" style="?android:attr/buttonBarButtonStyle"
+            android:layout_width="match_parent" android:layout_height="wrap_content"
+            android:text="Saved Editing Settings" />
+    </LinearLayout>
+</ScrollView>
